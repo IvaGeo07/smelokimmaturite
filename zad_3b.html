@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Смело към матурите</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css_template.css">
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&family=Mulish:wght@733&display=swap" rel="stylesheet">
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">-->
+<script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+
+<link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+<link rel="stylesheet" href="style_zad.css">
+
+<!-- Favicon  -->
+<link rel="icon" href="../img/favicon.png">
+
+<style>
+body,h1,h2,h3,h4,h5,p {font-family: 'IM Fell Double Pica', serif;
+font-family: 'Mulish', sans-serif;}
+body {font-size:1.15em;}
+
+/*body,h1,h2,h3,h4,h5,p {font-family: "Poppins", sans-serif}
+body {font-size:16px;}*/
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+.quiz-wrapper .answers .target {
+  display: inline-block;
+  width: 140px;
+  margin:3px;
+  text-align: center;
+}
+
+</style>
+
+
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Затвори</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Смело към <br>матурите</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Към начало</a> 
+    <a href="../bel.html#diktovki_vs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Диктовки</a> 
+    <a href="../bel.html#3" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Езикови задачи</a> 
+    <a href="../bel.html#chetene" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Видове текстове и художествени определения</a> 
+    <a href="../bel.html#zanimavki" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Занимавки</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Смело към матурите</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Eзикови задачи-->
+  <div class="w3-container"  style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Езикови задачи</b></h1>
+    <hr style="width:50px;border:5px solid rgb(95,77,238)" class="w3-round">
+    <h2>Сложни думи</h2>
+<h3>Сложните думи са тези, които са образувани от две или повече основи.
+  Изписват се по няколко начина:</h3>
+  <ul>
+    <li> Слято се пишат сложните съществителни имена с неравноправно отношение между изграждащите
+ги основи от типа подчинена основа―главна основа и сложните прилагателни имена с неравноправно
+отношение между изграждащите ги основи от типа подчинена основа―главна основа и по-рядко главна
+основа―подчинена основа. </li>
+   <li>Полуслято се пишат сложните съществителни имена с неравноправно отношение между изграждащите
+      ги основи от типа главна основа―подчинена основа или подчинена основа―главна основа, както и 
+      всички сложни думи с равноправно смислово отношение между основите от типа главна 
+      основа―главна основа.</li>
+   <li>Разделно се пишат съставните думи и синтактичните съчетания независимо от смисловото 
+     отношение между думите, от които са образувани ― равноправно или неравноправно, и от 
+     мястото на отделните думи една спрямо друга.</li>
+  </ul>
+
+    <div class="quiz-wrapper" id="zad" >
+      <p class="question-description">Намерете сложните думи</p>
+      <ul class="options">
+        <li class="title">Вариантти</li>
+        <li class="option" data-target="иглолистни">иглолистни</li>
+        <li class="option" data-target="книголюбец">книголюбец</li> 
+        <li class="option" data-target="снеговалеж">снеговалеж</li>
+        <li class="option" data-target="риболов">риболов</li>
+        <li class="option" data-target="високопланински">високопланински</li>
+        <li class="option" data-target="топлолюбивата">топлолюбивата</li>
+        <li class="option" data-target="водолаз">водолаз</li>    
+
+      </ul>
+    <div class="answers">
+      <ol>
+        <li>вода и лазене<span class="target" data-accept="водолаз">&nbsp;</span></li>
+        <li>риба и ловене<span class="target" data-accept="риболов">&nbsp;</span> </li>
+        <li>книга и любов<span class="target" data-accept="книголюбец">&nbsp;</span> </li>
+        <li>игла и листа<span class="target" data-accept="иглолистни">&nbsp;</span> </li>
+        <li>топлина и любов<span class="target" data-accept="топлолюбивата">&nbsp;</span> </li>
+        <li>височина и планина<span class="target" data-accept="високопланински">&nbsp;</span> </li>
+        <li>сняг и вали<span class="target" data-accept="снеговалеж">&nbsp;</span> </li>
+      </ol>
+    </div>
+     <button type="submit" value="submit">Провери</button>
+     <div class="lightbox-bg"></div>
+     <div class="status confirm">
+   
+       <p><a href="../bel.html#3">Към уроците</a></p>
+     </div>
+     <div class="status deny">
+       <p>Не си отговорил на всички въпроси!</p>
+     </div>
+    </div>
+  </div> 
+
+</div>
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script><script  src="script_zad.js"></script>
+
+</body>
+</html>

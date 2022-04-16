@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Смело към матурите</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/css_template.css">
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&family=Mulish:wght@733&display=swap" rel="stylesheet">
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">-->
+<script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+
+<link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+<link rel="stylesheet" href="style/style_zad.css">
+<!--slider-->
+<link rel="stylesheet" href="style/style-slider.css">
+
+        <!-- Favicon  -->
+        <link rel="icon" href="img/favicon.png">
+
+<style>
+body,h1,h2,h3,h4,h5,p {font-family: 'IM Fell Double Pica', serif;
+font-family: 'Mulish', sans-serif;}
+body {font-size:1.15em;}
+
+/*body,h1,h2,h3,h4,h5,p {font-family: "Poppins", sans-serif}
+body {font-size:16px;}*/
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Затвори</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Смело към <br>матурите</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Към начало</a> 
+    <a href="mat.html#chisla" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Аритметика </a> 
+    <a href="mat.html#geo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Геометрия</a> 
+    <a href="mat.html#tekstovi" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Текстови задачи</a> 
+    <a href="mat.html#zanimavki" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Занимавки</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Смело към матурите</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- МАТ НАЧАЛО -->
+  <h1 class="w3-jumbo">Математика</h1>
+ 
+ 
+
+
+   <!-- Аритметика -->
+   <div class="w3-container" id="chisla" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Аритметика</b></h1>
+    <hr style="width:50px;border:5px solid rgb(95,77,238)" class="w3-round">
+    <div class="slider">
+        <style>
+                                    *{
+                                        box-sizing: border-box;
+                                    }
+
+                                    .slider{
+                                      width: 100%;
+                                    }
+                                    .row{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        
+                                    }
+                                    .column{
+                                        flex: 33%;
+                                        max-width: 33%;
+                                    }
+                                    .img-hover-zoom{
+                                        height: auto;
+                                        overflow: hidden;
+                                        border: 5px solid #ffff;
+                                        
+                                    }
+                                    .img-hover-zoom img{
+                                        vertical-align: middle;
+                                        margin: 0;
+                                        padding: 0;
+                                        border: 0;
+                                        transition:  transform .5s ease;
+                                        cursor: pointer;
+                                    }
+                                    .img-hover-zoom:hover img{
+                                        transform: scale(1.5);
+                                    }
+
+                                    @media screen and (max-width: 800px) {
+                                        .column{
+                                            flex: 50%;
+                                            max-width: 50%;
+                                        }
+                                    }
+
+                                    @media screen and (max-width: 500px) {
+                                        .column{
+                                            flex: 100%;
+                                            max-width: 100%;
+                                        }
+                                    }
+        </style>
+                   <div id="1m">
+                      <h2>Четене и записване на числа</h2>  
+                    <a href="zad/zad_1m.html#diktovki_vs"><img src="img/zad/zad_m1.jpg" alt="exercise"></a>
+                  </div>
+      
+   
+                  <div id="2m">
+                     <h2>Събиране и изваждане на числа</h2>  
+                   <a href="zad/zad_2m.html#diktovki_vs"><img src="img/zad/zad_m2.jpg" alt="exercise"></a>
+                 </div>
+
+                 
+                 <div id="3m">
+                  <h2>Умножение и деление</h2>  
+                <a href="zad/zad_3m.html#diktovki_vs"><img src="img/zad/zad_m3.jpg" alt="exercise"></a>
+              </div>
+
+              <div id="4m">
+               <h2>Намиране на неизвестно</h2>  
+             <a href="zad/zad_4m.html#diktovki_vs"><img src="img/zad/zad_m4.jpg" alt="exercise"></a>
+           </div>
+
+           <div id="test3">
+            <h2>Тест</h2>  
+          <a href="testove/test_Mat1.html"><img src="img/zad/test_m.jpg" alt="exercise"></a>
+        </div>
+  </div>
+</div> 
+
+
+  <!-- Геометрия -->
+  <div class="w3-container" id="geo" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Геометрия</b></h1>
+    <hr style="width:50px;border:5px solid rgb(95,77,238)" class="w3-round">
+ <p>Реши задачата и провери отговора, криещ се зад бухалчето</p>
+                       <style>
+                          
+
+.chetene-razb {
+   
+     line-height: 1.2;
+   width: 100%;
+   margin: 0 auto;
+   position: relative;
+}
+
+/* Section colours */
+[class^="mmmmmmmm"] {
+   background-color: rgb(95,77,238);
+}
+
+
+/* Product/item container */
+.mmmmmmmm{
+   width: 30%;
+   height: 550px;
+   margin: 10px 2px;
+   text-align: center; /* Centers all child elements within */
+   float: left; /* Stacks containers side by side */
+   position: relative;
+   display: block;
+   overflow: hidden;
+}
+.main-image {
+   width: 100%;
+   height: 200px;
+   overflow: hidden;
+   margin-bottom: 10px;
+   position: relative;
+   perspective: 800px; /* flip animation */
+}
+/* Main image flip animation */
+.main-image #image-flip {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   transform-style: preserve-3d;
+   transition-property: transform;
+   transition-duration: 1s;
+   transition-timing-function: ease-out;
+   transition-delay: 1.5s;
+   transform-origin: center center;
+   cursor: pointer;
+}
+.main-image #image-flip img {
+   width: 100%; /* Resizing placeholder img */
+   display: block;
+   position: absolute;
+   backface-visibility: hidden;
+}
+.main-image #image-flip img.main-image-back {
+   transform: rotateX(-180deg);
+}
+[class*="mmmmmmmm"]:hover #image-flip {
+   transform: rotateX(-180deg);
+}
+
+p.description {
+   color: #FFF;
+   line-height: 1.4;
+   height: 220px;
+   overflow: hidden; /* Hides long texts */
+   display: block;
+   padding: 0 10px;
+   margin-bottom: 15px;
+}
+
+                          
+                        </style>
+  
+
+                       
+  <div class="chetene-razb">
+  
+   <div class="mmmmmmmm"> <!--1-->
+     <div class="main-image">
+        <div id="image-flip">
+        <img class="main-image-front" src="img/mat/g_1.png">
+        <img class="main-image-back" src="img/ezikovi/g_1.png">
+        </div>
+     </div>
+     <h2>Задача 1</h2> </h2>
+     <p class="description">Намерете обиколката на триъгълник, ако едната страна на триъгълника е 15см, а всяка следваща е с 5см по-дълга. Намерете и видът на тлиъгълника според страните му.  
+  
+</p>
+     
+  </div>
+  <div class="mmmmmmmm"> <!--2-->
+     <div class="main-image">
+        <div id="image-flip">
+        <img class="main-image-front" src="img/mat/g_2.png">
+        <img class="main-image-back" src="img/ezikovi/g_2.png">
+        </div>
+     </div>
+     <h2>Задача 2</h2>
+     <p class="description">Намерете обиколката  на правоъгълник с лице 27кв.см, ако дължината на едната му страна е три пъти по-голяма от дължината на другата му страна.
+
+
+       </p>
+ 
+  </div>
+  <div class="mmmmmmmm"> <!--3-->
+     <div class="main-image">
+        <div id="image-flip">
+        <img class="main-image-front" src="img/mat/g_3.png">
+        <img class="main-image-back" src="img/ezikovi/g_3.png">
+        </div>
+     </div>
+     <h2>Задача 3</h2>
+     <p class="description">Ако обиколката на триъгълник е 180мм и едната му страна е три пъти по-голяма от втората, която е с 30мм по-къса от третата страна на триъгълника, то на колко са равни дължините на страните в милиметри?
+
+     </p>
+
+     
+  
+  </div>
+
+  <div class="mmmmmmmm"> <!--4-->
+   <div class="main-image">
+      <div id="image-flip">
+      <img class="main-image-front" src="img/mat/g_4.png">
+      <img class="main-image-back" src="img/ezikovi/g_4.png">
+      </div>
+   </div>
+   <h2>Задача 4</h2>
+   <p class="description">Ако дължината на едната страна на правоъгълник е 85мм, а другата е с 45мм по-къса от нея, то на колко са равни обиколката и лицето на правоъгълника?
+
+</p>
+   
+</div>
+<div class="mmmmmmmm"> <!--5-->
+   <div class="main-image">
+      <div id="image-flip">
+      <img class="main-image-front" src="img/mat/g_5.png">
+      <img class="main-image-back" src="img/ezikovi/g_5.png">
+      </div>
+   </div>
+   <h2>Задача 5</h2>
+   <p class="description">Намерете големита и определете вида на ъгъл с 30<sup>o</sup> по-голям от 90<sup>o</sup> и на ъгъл с 15<sup>o</sup> по-малък от 90<sup>o</sup>.
+
+     </p>
+
+</div>
+<div class="mmmmmmmm"> <!--6-->
+   <div class="main-image">
+      <div id="image-flip">
+      <img class="main-image-front" src="img/mat/g_6.png">
+      <img class="main-image-back" src="img/ezikovi/g_6.png">
+      </div>
+   </div>
+   <h2>Задача 6</h2>
+   <p class="description">Ако дължината на едната страна е два пъти по-малка от дължината на другата страна на правоъгълника с лице 18кв.см, то на колко е равна обиколката му?
+
+     </p>
+
+   
+
+</div>
+
+</div>  
+
+   
+ 
+
+</div>
+  
+
+ <!-- Текстови задачи -->
+ <div class="w3-container" id="tekstovi" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-red"><b>Текстови задачи</b></h1>
+  <hr style="width:50px;border:5px solid rgb(95,77,238)" class="w3-round">
+  <p>Реши задачата и провери отговора, криещ се зад бухалчето</p>   
+           <style>
+                            
+  
+  .chetene-razb {
+     
+       line-height: 1.2;
+     width: 100%;
+     margin: 0 auto;
+     position: relative;
+  }
+  
+  /* Section colours */
+  [class^="mmmmmmmm"] {
+     background-color: rgb(95,77,238);
+  }
+  
+  
+  /* Product/item container */
+  .mmmmmmmm{
+     width: 30%;
+     height: 550px;
+     margin: 10px 2px;
+     text-align: center; /* Centers all child elements within */
+     float: left; /* Stacks containers side by side */
+     position: relative;
+     display: block;
+     overflow: hidden;
+  }
+  .main-image {
+     width: 100%;
+     height: 200px;
+     overflow: hidden;
+     margin-bottom: 10px;
+     position: relative;
+     perspective: 800px; /* flip animation */
+  }
+  /* Main image flip animation */
+  .main-image #image-flip {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     transform-style: preserve-3d;
+     transition-property: transform;
+     transition-duration: 1s;
+     transition-timing-function: ease-out;
+     transition-delay: 1.5s;
+     transform-origin: center center;
+     cursor: pointer;
+  }
+  .main-image #image-flip img {
+     width: 100%; /* Resizing placeholder img */
+     display: block;
+     position: absolute;
+     backface-visibility: hidden;
+  }
+  .main-image #image-flip img.main-image-back {
+     transform: rotateX(-180deg);
+  }
+  [class*="mmmmmmmm"]:hover #image-flip {
+     transform: rotateX(-180deg);
+  }
+  
+  p.description {
+     color: #FFF;
+     line-height: 1.4;
+     height: 220px;
+     overflow: hidden; /* Hides long texts */
+     display: block;
+     padding: 0 10px;
+     margin-bottom: 15px;
+  }
+  
+                            
+                          </style>
+                         
+  <div class="chetene-razb">
+  
+      <div class="mmmmmmmm"> <!--1-->
+        <div class="main-image">
+           <div id="image-flip">
+           <img class="main-image-front" src="img/ezikovi/1-ezik.png">
+           <img class="main-image-back" src="img/ezikovi/t_1.png">
+           </div>
+        </div>
+        <h2>Задача 1</h2> </h2>
+        <p class="description">На  зеленчукова борса доставили 1 т зеле. За ресторант купили 300 кг, а останалото зеле било закупено от 5 магазина поравно. Колко килограма е закупил всеки магазин?
+     
+   </p>
+        
+     </div>
+     <div class="mmmmmmmm"> <!--2-->
+        <div class="main-image">
+           <div id="image-flip">
+           <img class="main-image-front" src="img/ezikovi/1-ezik.png">
+           <img class="main-image-back" src="img/ezikovi/t_2.png">
+           </div>
+        </div>
+        <h2>Задача 2</h2>
+        <p class="description">Във Велегденска изложба взели участие 1160 деца. Десетинката от тях получили предметни награди, а останалите грамоти. Колко деца са получили грамоти?
+  
+          </p>
+    
+     </div>
+     <div class="mmmmmmmm"> <!--3-->
+        <div class="main-image">
+           <div id="image-flip">
+           <img class="main-image-front" src="img/ezikovi/1-ezik.png">
+           <img class="main-image-back" src="img/ezikovi/t_3.png">
+           </div>
+        </div>
+        <h2>Задача 3</h2>
+        <p class="description">За новата учебна година за училищната библиотека били доставени 570 книги от български и от чужди автори. Книгите от чужди автори били 3 пъти по-малко от общия брой. Колко са книгите от български автори?
+        </p>
+  
+        
+     
+     </div>
+   
+     <div class="mmmmmmmm"> <!--4-->
+      <div class="main-image">
+         <div id="image-flip">
+         <img class="main-image-front" src="img/ezikovi/1-ezik.png">
+         <img class="main-image-back" src="img/ezikovi/t_4.png">
+         </div>
+      </div>
+      <h2>Задача 4</h2>
+      <p class="description">Едно бюро струва 165 лв., а едно легло с 25 лв. по-малко. Колко лева струват две бюра и едно легло?
+  </p>
+      
+   </div>
+   <div class="mmmmmmmm"> <!--5-->
+      <div class="main-image">
+         <div id="image-flip">
+         <img class="main-image-front" src="img/ezikovi/1-ezik.png">
+         <img class="main-image-back" src="img/ezikovi/t_5.png">
+         </div>
+      </div>
+      <h2>Задача 5</h2>
+      <p class="description">Футболна топка струва 27 лева, а футболен екип - с 45 лева повече. Колко лева струват една топка и 11 екипа?
+        </p>
+  
+   </div>
+   <div class="mmmmmmmm"> <!--6-->
+      <div class="main-image">
+         <div id="image-flip">
+         <img class="main-image-front" src="img/ezikovi/1-ezik.png">
+         <img class="main-image-back" src="img/ezikovi/t_6.png">
+         </div>
+      </div>
+      <h2>Задача 6</h2>
+      <p class="description">За благотворителен концерт ученици от 4 клас събрали 822 лева. Третинката от тях дали за ремонт на спортната площадка в училището. От останалите пари закупили топки за 69 лв. и мебели за кластан си стая. Колко лева струват мебелите? 
+        </p>
+  
+      
+   
+   </div>
+  
+  </div>  
+  </div>
+
+  <!--Занимавки-->
+  <div class="w3-container" id="zanimavki" style="margin-top:75px">
+   <h1 class="w3-xxxlarge w3-text-red"><b>Занимавки</b></h1>
+   <hr style="width:50px;border:5px solid rgb(95,77,238)" class="w3-round">
+  <div class="bb-custom-wrapper">
+   <div style="width: 100%;">
+      <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;">
+      <iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0;
+       left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/622a66d2eaaa04001939afff"
+        type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" 
+        allownetworking="all"></iframe> </div> 
+      </div>
+  </div> 
+</div>
+
+</div>
+
+
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script><script  src="script/script_zad.js"></script>
+
+</body>
+</html>

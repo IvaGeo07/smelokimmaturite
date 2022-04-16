@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Смело към матурите</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/css_template.css">
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&family=Mulish:wght@733&display=swap" rel="stylesheet">
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">-->
+<script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+
+<link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+<link rel="stylesheet" href="style/style_zad.css">
+<!--slider-->
+<link rel="stylesheet" href="style/style-slider.css">
+
+        <!-- Favicon  -->
+        <link rel="icon" href="img/favicon.png">
+
+<style>
+body,h1,h2,h3,h4,h5,p {font-family: 'IM Fell Double Pica', serif;
+font-family: 'Mulish', sans-serif;}
+body {font-size:1.15em;}
+
+/*body,h1,h2,h3,h4,h5,p {font-family: "Poppins", sans-serif}
+body {font-size:16px;}*/
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+
+.w3-container h2, h3 {
+    padding-top: 20px;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Затвори</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Смело към <br>матурите</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <div class="w3-bar-block">
+      <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Към начало</a> 
+      <a href="bel.html#diktovki_vs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Диктовки</a> 
+      <a href="bel.html#ezikovi" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Езикови задачи</a> 
+      <a href="bel.html#chetene" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Видове текстове и художествени определения</a> 
+      <a href="bel.html#zanimavki" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Занимавки</a> 
+    </div>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Смело към матурите</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- БЕЛ НАЧАЛО -->
+  <h1 class="w3-jumbo">Български език</h1>
+
+ 
+
+
+   <!-- Диктовки-->
+   <div class="w3-container" id="diktovki_vs" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Диктовки</b></h1>
+    <hr style="width:50px;border:5px solid rgb(95,77,238);" class="w3-round">
+    <div class="slider">
+        <style>
+                                    *{
+                                        box-sizing: border-box;
+                                    }
+
+                                    .slider{
+                                      width: 100%;
+                                    }
+                                    .row{
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        
+                                    }
+                                    .column{
+                                        flex: 33%;
+                                        max-width: 33%;
+                                    }
+                                    .img-hover-zoom{
+                                        height: auto;
+                                        overflow: hidden;
+                                        border: 5px solid #ffff;
+                                        
+                                    }
+                                    .img-hover-zoom img{
+                                        vertical-align: middle;
+                                        margin: 0;
+                                        padding: 0;
+                                        border: 0;
+                                        transition:  transform .5s ease;
+                                        cursor: pointer;
+                                    }
+                                    .img-hover-zoom:hover img{
+                                        transform: scale(1.5);
+                                    }
+
+                                    @media screen and (max-width: 800px) {
+                                        .column{
+                                            flex: 50%;
+                                            max-width: 50%;
+                                        }
+                                    }
+
+                                    @media screen and (max-width: 500px) {
+                                        .column{
+                                            flex: 100%;
+                                            max-width: 100%;
+                                        }
+                                    }
+        </style>
+                <p>Кратко указание за диктовката.
+                  Чуйте целите текстове без да ги записвате. Изпълнете указанията от диктовките.
+                  Ако се затруднявате или искате да направите проверка, използвайте книжката.
+                </p>
+
+        <div class="row" id="diktovki_1" >
+         
+            <div class="column">
+              <h2 style="text-align: center;">Всеки с късмета си</h2>
+               <div class="img-hover-zoom">
+               <a href="diktovki/book1.html">  <img src="img/book/1.gif" style="width:100%" alt="book"></a> 
+                </div>
+                <audio id="myAudio" controls>
+                    <source src="audio/Vseki s kysmeta si.ogg" type="audio/ogg">
+                    <source src="audio/Vseki s kysmeta si.mp3" type="audio/mpeg">
+                </audio>
+                
+
+               
+            
+                
+    
+            </div>
+            <div class="column">
+              <h2 style="text-align: center;">Спор</h2>
+                <div class="img-hover-zoom">
+               <a href="diktovki/book2.html">  <img src="img/book/2.gif" style="width:100%" alt="book"></a> 
+                </div>
+               
+                <audio id="myAudio" controls>
+                    <source src="audio/Spor.ogg" type="audio/ogg">
+                    <source src="audio/Spor.mp3" type="audio/mpeg">
+                  </audio>
+                
+    
+            </div>
+            <div class="column">
+              <h2 style="text-align: center;">Опит за летене</h2>
+                <div class="img-hover-zoom">
+               <a href="diktovki/book3.html">  <img src="img/book/3.gif" style="width:100%" alt=""></a> 
+                </div>
+            
+                <audio id="myAudio" controls>
+                    <source src="audio/Opit za letene.ogg" type="audio/ogg">
+                    <source src="audio/Opit za letene.mp3" type="audio/mpeg">
+                  </audio>
+                
+    
+            </div>
+         
+         
+    
+    
+    
+        </div>
+        <div class="row" id="diktovki_2">
+         
+          <div class="column">
+            <h2 style="text-align: center;">Полет с ракета</h2>
+              <div class="img-hover-zoom">
+             <a href="diktovki/book4.html">  <img src="img/book/4.gif" style="width:100%" alt=""></a> 
+              </div>
+             
+              <audio id="myAudio" controls>
+                  <source src="audio/Polet s raketa.ogg" type="audio/ogg">
+                  <source src="audio/Polet s raketa.mp3" type="audio/mpeg">
+                </audio>
+              
+  
+          </div>
+          <div class="column">
+            <h2 style="text-align: center;">Неделна разходка</h2>
+              <div class="img-hover-zoom">
+             <a href="diktovki/book5.html">  <img src="img/book/5.gif" style="width:100%" alt=""></a> 
+              </div>
+             
+              <audio id="myAudio" controls>
+                  <source src="audio/Nedelna razhodka.ogg" type="audio/ogg">
+                  <source src="audio/Nedelna razhodka.mp3" type="audio/mpeg">
+                </audio>
+              
+  
+          </div>
+          <div class="column">
+            <h2 style="text-align: center;">Лебед</h2>
+              <div class="img-hover-zoom">
+             <a href="diktovki/book6.html">  <img src="img/book/6.gif" style="width:100%" alt=""></a> 
+              </div>
+    
+              <audio id="myAudio" controls>
+                  <source src="audio/Lebed.ogg" type="audio/ogg">
+                  <source src="audio/Lebed.mp3" type="audio/mpeg">
+                </audio>
+              
+  
+          </div>
+        
+       
+  
+  
+  
+      </div>
+
+    </div>
+ 
+      
+   
+  </div>
+
+  <!-- Eзикови задачи-->
+  <div class="w3-container" id="ezikovi" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Езикови задачи</b></h1>
+    <hr style="width:50px;border:5px solid rgb(95,77,238);" class="w3-round">
+    <div id="1">
+    <h2>Морфеми</h2>
+<h3>Всички думи са изградени от по-малки части, които ние наричаме морфеми. Тези които
+   познаваме като словообразуващи са представка, корен и наставка, а
+  тези познати като формообразуващи окончание и членна морфема.</h3>
+
+   <ul>
+     <h3>Словообразуващи:</h3>
+     <li> Коренът показва основното значение на думата; </li>
+    <li>Представките стоят пред корена на думата и променят значението ѝ;</li>
+    <li>Наставките стоят след корена на думата и променят значението ѝ;</li>
+   </ul>
+
+   <ul>
+    <h3>Формообразуващи:</h3>
+    <li> Окончанието стои след корена или наставката и показва рода и числото на думата; </li>
+   <li>Членната морфема е в края на дума и показва определителния член;</li>
+  </ul>
+    <a href="zad/zad_1b.html#zad"> <img src="img/zad/zad_b1.jpg" alt=""></a>
+  </div>
+
+  <div  id="2">
+    <h2>Сродни думи</h2>
+<h3>Сродните думи имат общ корен, близки са по смисъл и се образуват с помощта на представките
+   и наставките. Сродните думи могат да бъдат различни части на речта!</h3>
+  
+    <a href="zad/zad_2b.html#zad"><img src="img/zad/zad_b2.jpg" alt="exercise"></a>
+  </div>
+
+  <div  id="3">
+    <h2>Сложни думи</h2>
+    <h3>Сложните думи са тези, които са образувани от две или повече основи.
+      Изписват се по няколко начина:</h3>
+      <ul>
+        <li> Слято се пишат сложните съществителни имена с неравноправно отношение между изграждащите
+    ги основи от типа подчинена основа―главна основа и сложните прилагателни имена с неравноправно
+    отношение между изграждащите ги основи от типа подчинена основа―главна основа и по-рядко главна
+    основа―подчинена основа. </li>
+       <li>Полуслято се пишат сложните съществителни имена с неравноправно отношение между изграждащите
+          ги основи от типа главна основа―подчинена основа или подчинена основа―главна основа, както и 
+          всички сложни думи с равноправно смислово отношение между основите от типа главна 
+          основа―главна основа.</li>
+       <li>Разделно се пишат съставните думи и синтактичните съчетания независимо от смисловото 
+         отношение между думите, от които са образувани ― равноправно или неравноправно, и от 
+         мястото на отделните думи една спрямо друга.</li>
+      </ul>
+  
+    <a href="zad/zad_3b.html#zad"><img src="img/zad/zad_b3.jpg" alt="exercise"></a>
+  </div>
+
+  <div id="4">
+    <h2>Части на речта</h2>
+    <h3>Видове:</h3>
+    <ul>
+      <li> Съществително име - назовава предмет;</li>
+      <li> Прилагателно име - означава признак на предмет;</li>
+      <li> Глагол - означава дейсвие или състояние, свързано с лице и предмет;</li>
+      <li> Лично местоимение - замества име или именно словосъчетание;</li>
+      <li>Числително име - назовава брой, име или поредност.</li>
+    
+    </ul>
+  
+    <a href="zad/zad_4b.html#zad"><img src="img/zad/zad_b4.jpg" alt="exercise"></a>
+  </div>
+
+  <div id="5">
+    <h2>Определяне на частите на речта</h2>
+    <h3>Признаци по които определяме частите на речта:</h3>
+    <ul>
+      <li> Съществително име - род и число;</li>
+      <li> Прилагателно име - род и число;</li>
+      <li> Глагол - лице, число и време;</li>
+      <li> Лично местоимение - лице и число;</li>
+      <li>Числително име - бройно или редно, род и число.</li>
+    
+    </ul>
+  
+    <a href="zad/zad_5b.html#zad"><img src="img/zad/zad_b5.jpg" alt="exercise"></a>
+  </div>
+
+  <div id="6">
+    <h2>Синоними</h2>
+    <h3>Синонимите са думи, които се пишат различно, но имат близки значения.</h3>
+  
+    <a href="zad/zad_6b.html#zad"><img src="img/zad/zad_b6.jpg" alt="exercise"></a>
+  </div>
+
+  <div id="7">
+    <h2>Антоними</h2>
+    <h3>Антонимите са думи с противоположно значение</h3>
+
+  
+    <a href="zad/zad_7b.html#zad"><img src="img/zad/zad_b7.jpg" alt="exercise"></a>
+  </div>
+
+  <div id="8">
+    <h2>Пряко и преносно значение</h2>
+    <h3>Прякото значеине на думите, е това което първо възниква в съзнанието ни ,след
+       като чуем или прочетем думата. А преносното е допълнително значение на думата, 
+       което се осъществява чрез пренасяне на прякото значение върху нови предмети и
+        техните признаци въз основа на различен вид прилики.  </h3>
+  
+    <a href="zad/zad_8b.html#zad"><img src="img/zad/zad_b8.jpg" alt="exercise"></a>
+  </div>
+
+  <div id="9">
+    <h2>Прости и сложни изречения</h2>
+    <h3>Простите изречения са тези, които съдържат едно сказуемо, а сложните съдържат две или повече.</h3>
+    <a href="zad/zad_9b.html#zad"><img src="img/zad/zad_b9.jpg" alt="exercise"></a>
+  </div>
+
+  <div id="10">
+    <h2>Изречения по цел на изказване</h2>
+    <h3>Видовете изречения по цел на изказване са:</h3>
+    <ul>
+      <li> Съобщителни - разказва се нещо, съобщава се информация;</li>
+      <li> Въпросителни - задава се въпрос;</li>
+      <li> Възклицателни - изразяват се чувства;</li>
+      <li> Подбудителни/заповедни - заповядва се.</li>
+    </ul>
+    <a href="zad/zad_10b.html#zad"><img src="img/zad/zad_b10.jpg" alt="exercise"></a>
+  </div>
+
+  <div id="test1">
+  <h2>Тест</h2>
+    <a href="testove/test_Bel.html"><img src="img/zad/test_b1.jpg" alt="exercise"></a>
+  </div>
+  </div> 
+
+ <!-- Четене с разбиране -->
+ <div class="w3-container" id="chetene" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-red"><b>Видове текстове и художествени определения</b></h1>
+  <hr style="width:50px;border:5px solid rgb(95,77,238);" class="w3-round">
+  <div>
+  
+    <a href="testove/test_Bel2.html"><img src="img/zad/test_b2.jpg" alt="exercise"></a>
+  </div>
+</div>
+
+ <!-- Занимавки -->
+ <div class="w3-container" id="zanimavki" style="margin-top:75px">
+  <h1 class="w3-xxxlarge w3-text-red"><b>Занимавки</b></h1>
+  <hr style="width:50px;border:5px solid rgb(95,77,238);" class="w3-round">
+  <p>Въпросите, на които ще отговарят, са от следните 6 категории: значение на думите, чужди думи, поговорки, синоними и антоними, правопис и граматика. 
+  Отговори на въпроса и провери отговора, криещ се зад бухалчето
+  </p>
+                       <style>
+                          
+
+.chetene-razb {
+   
+     line-height: 1.2;
+   width: 100%;
+   margin: 0 auto;
+   position: relative;
+}
+
+/* Section colours */
+[class^="mmmmmmmm"] {
+   background-color: rgb(95,77,238);
+}
+
+
+/* Product/item container */
+.mmmmmmmm{
+   width: 30%;
+   height: 550px;
+   margin: 10px 2px;
+   text-align: center; /* Centers all child elements within */
+   float: left; /* Stacks containers side by side */
+   position: relative;
+   display: block;
+   overflow: hidden;
+}
+.main-image {
+   width: 100%;
+   height: 200px;
+   overflow: hidden;
+   margin-bottom: 10px;
+   position: relative;
+   perspective: 800px; /* flip animation */
+}
+/* Main image flip animation */
+.main-image #image-flip {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   transform-style: preserve-3d;
+   transition-property: transform;
+   transition-duration: 1s;
+   transition-timing-function: ease-out;
+   transition-delay: 1.5s;
+   transform-origin: center center;
+   cursor: pointer;
+}
+.main-image #image-flip img {
+   width: 100%; /* Resizing placeholder img */
+   display: block;
+   position: absolute;
+   backface-visibility: hidden;
+}
+.main-image #image-flip img.main-image-back {
+   transform: rotateX(-180deg);
+}
+[class*="mmmmmmmm"]:hover #image-flip {
+   transform: rotateX(-180deg);
+}
+
+p.description {
+   color: #FFF;
+   line-height: 1.4;
+   height: 220px;
+   overflow: hidden; /* Hides long texts */
+   display: block;
+   padding: 0 10px;
+   margin-bottom: 15px;
+}
+
+                          
+                        </style>
+  
+
+                       
+<div class="chetene-razb">
+
+    <div class="mmmmmmmm"> <!--1-->
+      <div class="main-image">
+         <div id="image-flip">
+         <img class="main-image-front" src="img/ezikovi/1-ezik.png">
+         <img class="main-image-back" src="img/ezikovi/1-ezik-1.png">
+         </div>
+      </div>
+      <h2>Значение на думите </h2>
+      <p class="description">Предложете синоними на следните думи, образувани от същия корен.  
+     <br> А) ЛОВЕЦ
+     <br> Б) ГМУРКАЧ
+     <br>В) НАМЕТКА
+ </p>
+      
+   </div>
+   <div class="mmmmmmmm"> <!--2-->
+      <div class="main-image">
+         <div id="image-flip">
+         <img class="main-image-front" src="img/ezikovi/1-ezik.png">
+         <img class="main-image-back" src="img/ezikovi/1-ezik-2.png">
+         </div>
+      </div>
+      <h2>Чужди думи</h2>
+      <p class="description">От двойката синоними посочете думата с домашен (български) произход.
+       <br> А) ГРАДИНА – ПАРК
+       <br> Б) АКЪЛ – УМ
+       <br> В) ХЪЛМ – БАИР
+       <br>Г) ОПИТ – ЕКСПЕРИМЕНТ
+       <br>Д) КОРЕКЦИЯ – ПОПРАВКА
+
+
+        </p>
+  
+   </div>
+   <div class="mmmmmmmm"> <!--3-->
+      <div class="main-image">
+         <div id="image-flip">
+         <img class="main-image-front" src="img/ezikovi/1-ezik.png">
+         <img class="main-image-back" src="img/ezikovi/1-ezik-3.png">
+         </div>
+      </div>
+      <h2>Поговорки </h2>
+      <p class="description">Довършете българските поговорки.
+
+      <br> A) Двама се карат, … .
+      <br> Б) Гладна кокошка  … .
+      <br> В) Желязото се кове,  … .
+      
+      </p>
+
+      
+   
+   </div>
+ 
+   <div class="mmmmmmmm"> <!--4-->
+    <div class="main-image">
+       <div id="image-flip">
+       <img class="main-image-front" src="img/ezikovi/1-ezik.png">
+       <img class="main-image-back" src="img/ezikovi/1-ezik-4.png">
+       </div>
+    </div>
+    <h2>Синоними и антоними</h2>
+    <p class="description">Коя от следните думи не е синоним на останалите? Обяснете значението ѝ.  
+   <br> А)ИЗДРЪЖЛИВ
+   <br> Б) ЗДРАВ
+   <br>В) ИЗПИПАН
+</p>
+    
+ </div>
+ <div class="mmmmmmmm"> <!--5-->
+    <div class="main-image">
+       <div id="image-flip">
+       <img class="main-image-front" src="img/ezikovi/1-ezik.png">
+       <img class="main-image-back" src="img/ezikovi/1-ezik-5.png">
+       </div>
+    </div>
+    <h2>Правопис</h2>
+    <p class="description">Кое изречение е правилно написано?
+     <br> А) Детето е много малко и неможе да брои дори до 10.
+     <br> Б) Многостранното сътрудничество е ключово за развитието на региона.
+     <br> В) Не образованите трудно си намират работа.
+      </p>
+
+ </div>
+ <div class="mmmmmmmm"> <!--6-->
+    <div class="main-image">
+       <div id="image-flip">
+       <img class="main-image-front" src="img/ezikovi/1-ezik.png">
+       <img class="main-image-back" src="img/ezikovi/1-ezik-6.png">
+       </div>
+    </div>
+    <h2>Граматика</h2>
+    <p class="description">
+      В кое от изреченията НЕ е допусната грешка? Обяснете защо. 
+      <br> А) Капитана на отборът е най-опитния състезател. 
+      <br> Б) Капитанът на отбора е най-опитния състезател.
+      <br> В) Капитанът на отбора е най-опитният състезател. 
+
+      </p>
+
+    
+ 
+ </div>
+
+</div>   
+
+   
+ 
+
+</div>
+
+</div>
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js'></script><script  src="script/script_zad.js"></script>
+
+</body>
+</html>
